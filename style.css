@@ -1,0 +1,91 @@
+body {
+    display: flex;
+    font-size: 20px;
+}
+
+#cy {
+    height: 700px;
+    width: 900px;
+    border: 2px solid #03e9f4;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+table {
+    margin: 0 auto;
+}
+
+button {
+    padding: 0.4em;
+    margin-top: 1em;
+    background-color: #ffffff;
+    color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #ffffff;
+    font-family: 'Raleway', sans-serif;
+}
+
+button{
+    padding: 25px 30px;
+    background-color: #050801;
+    color: #03e9f4;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    letter-spacing: 4px;
+    overflow: hidden;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+button:hover{
+    background: #03e9f4;
+    color: #1f1e1e;
+    box-shadow: 0 0 5px #03e9f4,
+    0 0 25px #03e9f4,
+    0 0 50px #03e9f4,
+    0 0 200px #03e9f4;
+}
+
+
+.block {
+    height: 700px;
+    border: 2px solid #eee;
+    border-radius: 5px;
+    padding: 0 1em;
+    margin-top: 0;
+    text-align: center;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.block #matrix {
+    margin: 20px auto;
+}
+
+.menu {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+table#dijkstraTable button {
+    margin: 0;
+    padding: 0.25em;
+}

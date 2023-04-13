@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Лабораторная работа №1</title>
+    <script src="js/cytoscape.min.js"></script>
+    <script src="js/cytoscape-menu.min.js"></script>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <div id="cy"></div>
+            </td>
+            <td>
+                <div class="menu">
+                    <div class="block">
+                        <div>
+                            <label for="size">Размер матрицы:</label>
+                            <input type="number" name="size" id="size" min="2" max="10" value="5" />
+                            <button onclick="generateMatrixClick()">Сгенерировать</button>
+                            <button onclick="generateEmptyMatrixClick()">Пустой
+                                граф</button>
+                        </div>
+                        <table id="matrix"></table>
+                        <button onclick="d_import();">Импорт</button>
+                        <input id="file-input" type="file" name="name"
+                               style="display: none;" />
+                        <button onclick="d_export();">Экспорт</button>
+                    </div>
+                    <div class="block">
+                        <label for="d_from">
+                            Считать от:
+                            <select name="d_from" id="d_from"></select>
+                        </label>
+                        <button onclick="calculate()">Посчитать</button>
+                        <button onclick="resetRed()">Сбросить</button>
+                        <table id="calcTable"></table>
+                        <table id="perfTable"></table>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <script src="js/html_interactions.js"></script>
+    <script src="js/helpers.js"></script>
+    <script src="js/logic.js"></script>
+    <script src="js/logic_menu.js"></script>
+    <script>
+        generateMatrixClick()
+    </script>
+</body>
+</html>
